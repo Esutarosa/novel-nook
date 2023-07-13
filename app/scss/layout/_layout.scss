@@ -1,0 +1,103 @@
+.container{
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+} 
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+
+    &__title,
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: var(--h1-font-size);
+        text-transform: uppercase;
+        margin-bottom: 1.5rem; 
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: var(--h2-font-size);
+        text-transform: uppercase;
+        color: var(--first-color);
+        margin-bottom: 0.25rem;
+    }
+}
+
+.main {
+    overflow: hidden;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--first-color);
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: var(--black-color-light);
+    font-weight: var(--font-medium);
+    transition: background .3s;
+    border: none;
+
+    &:hover {
+        background-color: var(--white-color);
+    }
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    background: var(--black-color-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--black-color-alt);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 340px){
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .section {
+        padding-block: 4rem 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 767px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 7rem 1.5rem;
+
+        &__subtitle {
+            margin-bottom: .75rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1064px) {
+    .container {
+        margin-inline: auto;
+    }
+}
