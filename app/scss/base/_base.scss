@@ -11,16 +11,11 @@ html {
 }
 
 body {
-    padding: 1rem 1rem 0;
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-
-    @include for-tablet-portrait-up {
-        padding: 1rem 3rem 0 6rem;
-    }
 }
 
 ul {
