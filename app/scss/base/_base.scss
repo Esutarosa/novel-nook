@@ -12,10 +12,11 @@ html {
 
 body {
     padding: 1rem 1rem 0;
-}
-
-h1, h2, h3 {
-    margin: 0; 
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 ul {

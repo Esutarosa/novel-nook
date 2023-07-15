@@ -18,7 +18,7 @@
 
     <header class="header" id="header">
         <div class="header__container">
-            <img src="" alt="" class="header__img">
+            <img src="images/avatar.jpg" alt="header image" class="header__img">
 
             <a href="#" class="header__logo">
                 NovelNook
@@ -26,11 +26,12 @@
 
             <div class="header__search">
                 <input type="search" placeholder="Search" class="header__input">
-                <i class="ri-search-line"></i>
+                <i class="ri-search-line header__icon"></i>
             </div>
 
-            <div class="header__toggle">
-                <i class="ri-menu-3-line" id="header-toggle"></i>
+            <div class="header__toggle" id="header-toggle">
+                <i class="ri-menu-3-line header__burger"></i>
+                <i class="ri-close-line header__close"></i>
             </div>
         </div>
     </header>
@@ -38,48 +39,80 @@
     <div class="nav" id="navbar">
         <nav class="nav__container">
             <div class="nav__content">
-                <a href="#" class="nav__logo">
-                    <i class="ri-brush-line"></i>
+                <a href="#" class="nav__link nav__logo">
+                    <i class="ri-quill-pen-line nav__icon"></i>
                     <span>NovelNook</span>
                 </a>
 
                 <div class="nav__list">
                     <div class="nav__items">
-                        <div class="nav__title">Profile</div>
+                        <h3 class="nav__title">Profile</h3>
 
                         <a href="#" class="nav__link active">
-                            <i class="ri-home-4-line"></i> Home
+                            <i class="ri-home-4-line nav__icon"></i> 
+                            <span class="nav__name">Home</span>
                         </a>
 
-                        <div class="nav__dropdown dropdown__item">
+                        <div class="dropdown__item">
                             <div class="dropdown__header">
-                                <i class="ri-user-line"></i> Profile
-                                <i class="ri-arrow-up-s-line"></i>
+                                <i class="ri-user-line nav__icon"></i> 
+                                <span class="dropdown__name">Profile</span>
+                                <i class="ri-arrow-down-s-line dropdown__icon"></i>
                             </div>
 
                             <div class="dropdown__content">
-                                <a href="#" class="nav__dropdown-item">Passwords</a>
-                                <a href="#" class="nav__dropdown-item">Mail</a>
-                                <a href="#" class="nav__dropdown-item">Accounts</a>
+                                <a href="#" class="dropdown__content-item">Passwords</a>
+                                <a href="#" class="dropdown__content-item">Mail</a>
+                                <a href="#" class="dropdown__content-item">Accounts</a>
                             </div>
                         </div>
 
                         <a href="#" class="nav__link active">
-                            <i class="ri-chat-1-line"></i> Messages
+                            <i class="ri-chat-1-line nav__icon"></i> 
+                            <span class="nav__name">Messages</span>
                         </a>
                     </div>
 
                     <div class="nav__items">
-                        <div class="nav__title">Menu</div>
+                        <h3 class="nav__title">Menu</h3>
+
+                        <div class="dropdown__item">
+                            <div class="dropdown__header">
+                                <i class="ri-notification-3-line nav__icon"></i> 
+                                <span class="dropdown__name">Notifications</span>
+                                <i class="ri-arrow-down-s-line dropdown__icon"></i>
+                            </div>
+
+                            <div class="dropdown__content">
+                                <a href="#" class="dropdown__content-item">Blocked</a>
+                                <a href="#" class="dropdown__content-item">Silenced</a>
+                                <a href="#" class="dropdown__content-item">Publish</a>
+                                <a href="#" class="dropdown__content-item">Program</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav__link active">
+                            <i class="ri-compasses-line nav__icon"></i> 
+                            <span class="nav__name">Explore</span>
+                        </a>
+
+                        <a href="#" class="nav__link active">
+                            <i class="ri-bookmark-line nav__icon"></i> 
+                            <span class="nav__name">Saved</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <a href="#" class="nav__logout">
-                <i class="ri-logout-box-line"></i> Log Out
+            <a href="#" class="nav__link nav__logout">
+                <i class="ri-logout-box-line nav__icon"></i> Log Out
             </a>
         </nav>
     </div>
+
+    <main class="main">
+
+    </main>
 
 </body>
 </html>
