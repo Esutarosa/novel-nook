@@ -16,6 +16,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: background .4s;
 }
 
 ul {
@@ -31,8 +32,12 @@ img {
     height: auto;
 }
 
-button {
-    cursor: pointer;
+button,
+input {
     border: none;
     outline: none;
+}
+
+button {
+    cursor: pointer;
 }
