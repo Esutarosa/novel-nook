@@ -314,6 +314,12 @@
                 margin-top: .75rem;
             }
         }
+
+        & span {
+            width: 100%;
+            height: 1px;
+            background-color: var(--text-color-light);
+        }
     }
 
     &__icon {
