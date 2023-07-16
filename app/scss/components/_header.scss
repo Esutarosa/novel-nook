@@ -386,10 +386,9 @@
 .change {
     &-theme {
         width: 1.75rem;
-        display: grid;
         color: var(--text-color);
         transition: color .4s;
-        margin-top: 5rem;
+        margin-top: 3rem;
 
         &:hover{
             color: var(--title-color);
