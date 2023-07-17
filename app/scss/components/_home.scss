@@ -1,9 +1,19 @@
 /*========== HOME ==========*/
 .home {
+    &__container {
+        margin-inline: 0;
+    }
+
     &__news {
-        &-preview {
-            margin-bottom: .5rem;
+        &-group,
+        &-preview,
+        &-button {
             background-color: var(--container-color);
+            margin-bottom: .75rem;
+        }
+
+        &-title {
+            margin: 0 0 .5rem .75rem;
         }
 
         &-body {
@@ -11,6 +21,7 @@
         }
 
         &-left {
+            width: 4rem;
             flex: none;
             display: flex;
             flex-direction: column;
@@ -21,10 +32,66 @@
             margin: .5rem;
         }
 
+        &-date, &-month-year {
+            color: var(--first-color);
+        }
+
         &-date {
             font: {
+                size: .9rem;
+                weight: var(--font-semi-bold);
+            }
+        }
+
+        &-month-year {
+            font: {
+                size: .70rem;
                 weight: var(--font-medium);
             }
+        }
+
+        &-right {
+            margin-right: .75rem;
+        }
+
+        &-image {
+            display: block;
+        }
+
+        &-name {
+            font: {
+                size: 1rem;
+                weight: var(--font-medium)
+            }
+            color: var(--text-color);
+        }
+
+        &-text {
+            margin: .25rem 0 .25rem;
+            font-size: .75rem;
+        }
+
+        &-data {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: baseline;
+            margin: 0 .5rem;
+            padding: 5px 10px 5px 0;
+        }
+
+        &-number {
+            margin-right: .1rem;
+        }
+
+        &-post &-body {
+            align-items: center;
+        }
+
+        &-button {
+            color: var(--first-color);
+            padding: 1.25rem;
+            text-align: center;
+            display: block;
         }
     }
 }
