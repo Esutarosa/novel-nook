@@ -1,6 +1,30 @@
 /*========== HOME ==========*/
 .home {
-    &__container {
-        
+    &__news {
+        &-preview {
+            margin-bottom: .5rem;
+            background-color: var(--container-color);
+        }
+
+        &-body {
+            display: flex;
+        }
+
+        &-left {
+            flex: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+            border-right: 1px solid var(--first-color);
+            padding-right: .5rem;
+            margin: .5rem;
+        }
+
+        &-date {
+            font: {
+                weight: var(--font-medium);
+            }
+        }
     }
 }
