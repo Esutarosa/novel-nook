@@ -41,7 +41,7 @@ const showMenu = (headerToggle, navbarId) => {
 showMenu('header-toggle', 'navbar')
 
 /*========== REMOVE MENU MOBILE ON CLICK ==========*/
-const navLink = document.querySelectorAll('.nav__link, .dropdown__content-item')
+const navLink = document.querySelectorAll('.nav__link, .dropdown__content-item, .link')
 
 function linkAction() {
     const navMenu    = document.getElementById('navbar')
@@ -59,3 +59,13 @@ const scrollHeader = () => {
                        : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+/*========== SHOW SCROLL UP ==========*/
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+/*========== DARK LIGHT THEME ==========*/
