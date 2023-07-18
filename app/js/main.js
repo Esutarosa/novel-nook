@@ -41,7 +41,7 @@ const showMenu = (headerToggle, navbarId) => {
 showMenu('header-toggle', 'navbar')
 
 /*========== REMOVE MENU MOBILE ON CLICK ==========*/
-const navLink = document.querySelectorAll('.nav__link, .dropdown__content-item, .link')
+const navLink = document.querySelectorAll('.nav__link, .dropdown__content-item')
 
 function linkAction() {
     const navMenu    = document.getElementById('navbar')

@@ -2,11 +2,10 @@
 .home {
     &__container {
         margin-inline: 0;
+        gap: 0;
     }
 
     &__news {
-        margin-bottom: 1.25rem;
-
         &-group,
         &-preview,
         &-button {
@@ -16,7 +15,8 @@
         }
 
         &-title {
-            margin: 0 0 .5rem .75rem;
+            padding: 1rem 0 .5rem .75rem;
+            background-color: var(--container-color);
         }
 
         &-body {
@@ -102,62 +102,7 @@
         background-color: var(--container-color);
 
         &-title {
-            margin: 0 0 .5rem .75rem;
-        }
-
-        &-work {
-            display: flex;
-            align-items: center;
-            margin: 0 .75rem .75rem;
-            color: var(--text-color);
-
-            i {
-                font: {
-                    size: 1.5rem;
-                    weight: var(--font-semi-bold);
-                }
-                color: var(--text-color);
-            }
-        }
-
-        &-meta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: .5rem;
-        }
-
-        &-subtitle {
-            display: flex;
-            align-items: center;
-
-            i {
-                font-size: 1rem;
-                margin-right: .25rem;
-                color: var(--text-color);
-            }
-        }
-
-        &-name {
-            font-size: .75rem;
-
-            span {
-                font-weight: var(--font-semi-bold);
-            }
-        }
-
-        &-img {
-            width: 70px;
-            height: 60px;
-        }
-
-        &-timecount {
-            font: {
-                size: .60rem;
-                weight: 400;
-            }
-            color: var(--text-color-light);
-            
+            margin: 1rem 0 .5rem .75rem;
         }
     }
 }

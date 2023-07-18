@@ -7,6 +7,7 @@
     padding: 0 1rem;
     box-shadow: 0 1px 0 hsla(264, 69%, 10%, .1);
     z-index: var(--z-fixed);
+    transition: .1s;
 
     @include for-tablet-landscape-up {
         padding: 0 3rem 0 6rem;
@@ -119,7 +120,7 @@
 }
 
 .bg-header {
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
 
