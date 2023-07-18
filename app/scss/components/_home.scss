@@ -5,9 +5,12 @@
     }
 
     &__news {
+        margin-bottom: 1.25rem;
+
         &-group,
         &-preview,
         &-button {
+            font-weight: var(--font-medium);
             background-color: var(--container-color);
             margin-bottom: .75rem;
         }
@@ -80,7 +83,7 @@
         }
 
         &-number {
-            margin-right: .1rem;
+            margin-right: .15rem;
         }
 
         &-post &-body {
@@ -92,6 +95,52 @@
             padding: 1.25rem;
             text-align: center;
             display: block;
+        }
+    }
+
+    &__sidebar {
+        background-color: var(--container-color);
+
+        &-title {
+            margin: 0 0 .5rem .75rem;
+        }
+
+        &-work {
+            display: flex;
+            margin: 0 .75rem .75rem;
+        }
+
+        &-meta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: .5rem;
+        }
+
+        &-subtitle {
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 1rem;
+                margin-right: .25rem;
+            }
+        }
+
+        &-name {
+            font-size: .75rem;
+
+            span {
+                font-weight: var(--font-semi-bold);
+            }
+        }
+
+        &-img {
+            width: 100px;
+            height: 70px;
+            background-size: cover;
+            display: inline-flex;
+            border-radius: .5rem;
         }
     }
 }
