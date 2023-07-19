@@ -26,6 +26,13 @@
     @include for-tablet-landscape-up {
         margin-inline: 6rem;
     }
+
+    &__title {
+        font: {
+            size: var(--h2-font-size);
+        }
+        color: var(--text-color);
+    }
 }
 
 .main {
