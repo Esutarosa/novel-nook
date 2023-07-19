@@ -2,10 +2,20 @@
 .home {
     &__container {
         margin-inline: 0;
-        gap: 0;
+
+        @include for-tablet-landscape-up {
+            margin-inline: auto;
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     &__news {
+        @include for-tablet-landscape-up {
+            width: 60%;
+            margin-right: .5rem;
+        }
+
         &-group,
         &-preview,
         &-button {
@@ -17,6 +27,10 @@
         &-title {
             padding: 1rem 0 .5rem .75rem;
             background-color: var(--container-color);
+
+            @include for-tablet-landscape-up {
+                padding: 1rem 0 .5rem;
+            }
         }
 
         &-body {
@@ -99,7 +113,10 @@
     }
 
     &__sidebar {
-        width: 100%;
+        @include for-tablet-landscape-up {
+            width: 40%;
+        }
+
         padding: 0 .75rem;
         background-color: var(--container-color);
 
@@ -111,6 +128,7 @@
             display: flex;
             align-items: center;
             margin-bottom: .75rem;
+            width: 100%;
         }
 
         &-img {
@@ -151,7 +169,7 @@
             font-size: .65rem;
         }
 
-        &-time {
+        &-time, &-liks {
             font-size: .55rem;
             color: var(--text-color-light);
         }
@@ -179,22 +197,40 @@
     flex: none;
 }
 
-.--bg-1 {
+.--bg-1-new {
     background-image: url('../images/new-sidebar-1.jpg');
 }
 
-.--bg-2 {
+.--bg-2-new {
     background-image: url('../images/new-sidebar-2.jpg');
 }
 
-.--bg-3 {
+.--bg-3-new {
     background-image: url('../images/new-sidebar-3.jpg');
 }
 
-.--bg-4 {
+.--bg-4-new {
     background-image: url('../images/new-sidebar-4.jpg');
 }
 
-.--bg-5 {
+.--bg-5-new {
     background-image: url('../images/new-sidebar-5.jpg');
+}
+
+//.--bg-1-popular {}
+
+.--bg-2-popular {
+    background-image: url('../images/popular-sidebar-2.jpg');
+}
+
+.--bg-3-popular {
+    background-image: url('../images/popular-sidebar-3.jpg');
+}
+
+.--bg-4-popular {
+    background-image: url('../images/popular-sidebar-4.jpg');
+}
+
+.--bg-5-popular {
+    background-image: url('../images/popular-sidebar-5.jpg');
 }

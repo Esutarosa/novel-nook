@@ -6,6 +6,7 @@
     width: 100%;
     padding: 0 1rem;
     box-shadow: 0 1px 0 hsla(264, 69%, 10%, .1);
+    background-color: var(--container-color);
     z-index: var(--z-fixed);
     transition: .1s;
 
@@ -394,7 +395,7 @@
     &-theme {
         color: var(--text-color);
         transition: color .4s;
-        margin-top: 9.2rem;
+        margin-top: 7rem;
 
         &:hover{
             color: var(--title-color);
