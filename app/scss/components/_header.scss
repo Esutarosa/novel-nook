@@ -10,7 +10,7 @@
     z-index: var(--z-fixed);
     transition: .1s;
 
-    @include for-tablet-landscape-up {
+    @include for-small-desktop-up {
         padding: 0 3rem 0 6rem;
     }
 
@@ -24,7 +24,7 @@
         height: var(--header-height);
         justify-content: space-between;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             height: calc(var(--header-height) + .5rem);
         }
     }
@@ -35,7 +35,7 @@
         border-radius: 50%;
         cursor: pointer;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             width: 40px;
             height: 40px;
             order: 1;
@@ -47,7 +47,7 @@
         font-weight: var(--font-medium);
         display: none;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             display: block;
         }
     }
@@ -68,7 +68,7 @@
             width: 70%;
         }
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             width: 300px;
             padding: .5rem .75rem;
         }
@@ -99,7 +99,7 @@
         color: var(--title-color);
         cursor: pointer;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             display: none;
         }
     }
@@ -137,7 +137,7 @@
     z-index: var(--z-fixed);
     transition: .3s;
 
-    @include for-tablet-landscape-up {
+    @include for-small-desktop-up {
         left: 0;
         padding: 1.2rem 1.4rem 0;
         width: 68px;
@@ -166,7 +166,7 @@
         margin-bottom: 2.5rem;
 
         &-name {
-            @include for-tablet-landscape-up {
+            @include for-small-desktop-up {
                 opacity: 0;
                 transition: .3s;
             }
@@ -185,7 +185,7 @@
     &__items {
         row-gap: 1.5rem;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             row-gap: 1.7rem;
         }
     }
@@ -196,7 +196,7 @@
         letter-spacing: .1rem;
         color: var(--text-color-light);
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             opacity: 0;
             transition: .3s;
         }
@@ -218,7 +218,7 @@
         margin-right: .5rem;
         padding-left: .2rem;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             font-size: 1.3rem;
         }
     }
@@ -227,7 +227,7 @@
         font-weight: var(--font-medium);
         white-space: nowrap;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             opacity: 0;
             transition: .3s;
         }
@@ -235,14 +235,14 @@
         &-out {
             font-weight: var(--font-medium);
 
-            @include for-tablet-landscape-up {
+            @include for-small-desktop-up {
                 opacity: 0;
                 transition: .3s;
             }
         }
     }
 
-    @include for-tablet-landscape-up {
+    @include for-small-desktop-up {
         &:hover &__logo-name {
             opacity: 1;
         }
@@ -271,7 +271,7 @@
         font-weight: var(--font-medium);
         transition: color .3s;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             opacity: 0;
             transition: .3s;
         }
@@ -294,7 +294,7 @@
 
         position: relative;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             opacity: 0;
             transition: .3s;
         }
@@ -327,7 +327,7 @@
         margin-left: .5rem;
         transition: .3s;
 
-        @include for-tablet-landscape-up {
+        @include for-small-desktop-up {
             opacity: 0;
             transition: .3s;
         }
@@ -349,7 +349,7 @@
         }
     }
 
-    @include for-tablet-landscape-up {
+    @include for-small-desktop-up {
         .nav:hover &__icon {
             opacity: 1;
         }
