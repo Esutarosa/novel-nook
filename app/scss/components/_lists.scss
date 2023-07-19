@@ -1,0 +1,38 @@
+/*========== LISTS ==========*/
+.lists {
+    &__body {
+        padding: 0 .75rem;
+        background-color: var(--container-color);
+    }
+
+    &__title {
+        padding: 1.25rem 0 0.5rem;
+        margin-bottom: .75rem;
+    }
+
+    &__list {
+        margin-bottom: .75rem;
+
+        &-subname {
+            font: {
+                size: var(--normal-font-size);
+                weight: var(--font-medium);
+            }
+            color: var(--text-color);
+        }
+
+        &-name {
+            color: var(--text-color);
+            font-size: var(--small-font-size);
+
+            i {
+                font-size: .75rem;
+            }
+        }
+
+        &-date {
+            font-size: var(--smaller-font-size);
+            color: var(--text-color-light);
+        }
+    }
+}
