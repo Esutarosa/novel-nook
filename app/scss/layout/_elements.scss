@@ -1,9 +1,9 @@
+/*========== BACKGROUND ==========*/
 .background-cover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-size: auto auto;
     background-position: 50%;
     background-size: cover;
     vertical-align: middle;
@@ -115,10 +115,16 @@
     background-image: url('../images/popular-sidebar-5.jpg');
 }
 
-// LINE CLAMP
+// BANNER
+.--bg-banner {
+    background-image: url('../images/banner-bg.jpg');
+}
+
+/*========== LINE CLAMO ==========*/
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
