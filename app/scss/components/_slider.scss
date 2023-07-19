@@ -7,7 +7,7 @@
     }
 
     &__title {
-        padding: .5rem 0 .5rem .75rem;
+        padding: 1.25rem 0 .5rem .75rem;
 
         @include for-small-desktop-up {
             padding: 1rem 0 0 .75rem;
@@ -59,7 +59,7 @@
     &-button-prev,
     &-button-next {
         position: absolute;
-        top: 2rem;
+        top: 2.6rem;
         bottom: initial;
         width: 2rem;
         height: 2rem;
