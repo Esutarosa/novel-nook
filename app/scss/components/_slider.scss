@@ -1,0 +1,57 @@
+/*========== SLIDER ==========*/
+.slider {
+    &__container {
+        background-color: var(--container-color);
+    }
+
+    &__title {
+        padding: .5rem 0 .5rem .75rem;
+
+        @include for-small-desktop-up {
+            padding: 1rem 0 0 .75rem;
+        }
+    }
+
+    &__card { 
+        width: 200px;
+        padding: 1rem;
+        margin-inline: 1rem;
+        display: block;
+    }
+
+    &__image {
+        display: block;
+        width: 200px;
+        height: 322px;
+        margin-bottom: .75rem;
+    }
+
+    &__name {
+        font-size: var(--normal-font-size);
+        margin-bottom: .25rem;
+        -webkit-line-clamp: 2;
+    }
+}
+
+.swiper {
+    &-button-prev::after,
+    &-button-next::after {
+        content: '';
+    }
+
+    &-button-prev,
+    &-button-next {
+        top: 7.5rem;
+        bottom: initial;
+        width: 2rem;
+        height: 2rem;
+        padding: 4px;
+        font-size: 1.8rem;
+        color: var(--first-color);
+        transition: background .4s;
+    }
+
+    &-button-prev {
+        left: calc(100% - 6rem);
+    }
+}

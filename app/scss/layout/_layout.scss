@@ -1,6 +1,6 @@
 .container{
     max-width: 1200px;
-    margin-inline: 1.5rem;
+    //margin-inline: 1.5rem;
 
     @include for-phone-only {
         margin-inline: 1rem;
@@ -38,5 +38,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    
+    display: none;
 }

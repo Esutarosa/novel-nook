@@ -68,4 +68,22 @@ const scrollUp = () => {
 }
 window.addEventListener('scroll', scrollUp)
 
+/*========== SWIPER SLIDER ==========*/
+const sliderSwiper = new Swiper('.slider__content', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        768: {
+            centeredSlides: false,
+        }
+    }
+})
+
 /*========== DARK LIGHT THEME ==========*/

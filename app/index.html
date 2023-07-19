@@ -8,9 +8,14 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>NovelNook</title>
+
+    <script src="js/swiper-bundle.min.js" defer></script>
 
     <script src="js/main.min.js" defer></script>
 </head>
@@ -129,10 +134,35 @@
     </div>
 
     <main class="main">
+        <section class="slider section">
+            <div class="slider__container container">
+                <h2 class="slider__title">Hottest Today</h2>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                
+                <div class="slider__content grid swiper">
+                    <div class="swiper-wrapper">
+                        <article class="slider__card swiper-slide">
+                            <a href="#" class="slider__image background-cover --bg-1-slider"></a>
+
+                            <a href="#" class="slider__name line-clamp">Genius Wizard Takes Medicine</a>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section class="home section" id="home">
             <div class="home__container container">
                 <div class="home__news">
-                    <h2 class="home__news-title">News</h2>
+                    <h2 class="section__title home__news-title">News</h2>
 
                     <div class="home__news-preview">
                         <a href="#" class="home__news-img background-cover --bg-1-news"></a>
@@ -301,13 +331,13 @@
                 </div>
 
                 <div class="home__sidebar">
-                    <h2 class="home__sidebar-title">New Works Today</h2>
+                    <h2 class="section__title home__sidebar-title">New Works Today</h2>
                     <div class="home__sidebar-works">
                         <a href="#" class="home__sidebar-work">
                             <div class="home__sidebar-img background-cover --bg-1-new"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">The Lustful World of the Dragon Girl</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">The Lustful World of the Dragon Girl</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-pantone-line"></i>
@@ -328,7 +358,7 @@
                             <div class="home__sidebar-img background-cover --bg-2-new"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Outside of time</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Outside of time</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-open-line"></i>
@@ -349,7 +379,7 @@
                             <div class="home__sidebar-img background-cover --bg-3-new"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Pursuit of the Truth</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Pursuit of the Truth</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-open-line"></i>
@@ -370,7 +400,7 @@
                             <div class="home__sidebar-img background-cover --bg-4-new"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Lost Mist</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Lost Mist</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-line"></i>
@@ -391,7 +421,7 @@
                             <div class="home__sidebar-img background-cover --bg-5-new"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Picking Up Attributes From Today</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Picking Up Attributes From Today</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-open-line"></i>
@@ -409,13 +439,13 @@
                         </a>
                     </div>
 
-                    <h2 class="home__sidebar-title">Popular Works</h2>
+                    <h2 class="section__title home__sidebar-title">Popular Works</h2>
                     <div class="home__sidebar-popular">
                         <a href="#" class="home__sidebar-work">
                             <div class="home__sidebar-img background-cover --bg-1-new"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">The Lustful World of the Dragon Girl</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">The Lustful World of the Dragon Girl</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-pantone-line"></i>
@@ -439,7 +469,7 @@
                             <div class="home__sidebar-img background-cover --bg-2-popular"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Complete Martial Arts Attributes</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Complete Martial Arts Attributes</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-open-line"></i>
@@ -462,7 +492,7 @@
                             <div class="home__sidebar-img background-cover --bg-3-popular"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Rise of Chaos</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Rise of Chaos</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-open-line"></i>
@@ -485,7 +515,7 @@
                             <div class="home__sidebar-img background-cover --bg-4-popular"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle ">Three Days of Happiness</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">Three Days of Happiness</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-open-line"></i>
@@ -508,7 +538,7 @@
                             <div class="home__sidebar-img background-cover --bg-5-popular"></div>
 
                             <div class="home__sidebar-meta">
-                                <h3 class="home__sidebar-subtitle">About the Reckless Girl</h3>
+                                <h3 class="home__sidebar-subtitle line-clamp">About the Reckless Girl Who Kept Challenging a Reborn Man Like Me</h3>
 
                                 <div class="home__sidebar-type">
                                     <i class="ri-book-line"></i>
