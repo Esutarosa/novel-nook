@@ -43,7 +43,7 @@
         }
 
         &-title {
-            padding: .5rem 0 .5rem .75rem;
+            padding: 1.25rem 0 .5rem .75rem;
             background-color: var(--container-color);
 
             @include for-small-desktop-up {
@@ -145,7 +145,7 @@
         background-color: var(--container-color);
 
         &-title {
-            padding: 1rem 0 .5rem;
+            padding: 1.25rem 0 .5rem;
 
             @include for-small-desktop-up {
                 margin: 1rem 0 .5rem;

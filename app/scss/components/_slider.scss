@@ -1,7 +1,9 @@
 /*========== SLIDER ==========*/
 .slider {
     &__container {
+        position: relative;
         background-color: var(--container-color);
+        margin-top: 1.5rem;
     }
 
     &__title {
@@ -13,23 +15,38 @@
     }
 
     &__card { 
-        width: 200px;
-        padding: 1rem;
-        margin-inline: 1rem;
+        width: 125px;
+        margin-inline: .5rem;
+        padding: 1rem 0 1rem;
         display: block;
+
+        @include for-small-desktop-up {
+            width: 140px;
+            padding: 1rem 0 1.5rem;
+            margin-inline: 1rem;
+        }
     }
 
     &__image {
         display: block;
-        width: 200px;
-        height: 322px;
+        height: 200px;
         margin-bottom: .75rem;
+
+        @include for-small-desktop-up {
+            height: 220px;
+        }
     }
 
     &__name {
         font-size: var(--normal-font-size);
         margin-bottom: .25rem;
         -webkit-line-clamp: 2;
+        color: var(--text-color);
+        transition: color .3s;
+
+        &:hover {
+            color: var(--first-color);
+        }
     }
 }
 
@@ -41,7 +58,8 @@
 
     &-button-prev,
     &-button-next {
-        top: 7.5rem;
+        position: absolute;
+        top: 2rem;
         bottom: initial;
         width: 2rem;
         height: 2rem;
@@ -49,9 +67,15 @@
         font-size: 1.8rem;
         color: var(--first-color);
         transition: background .4s;
+
+        @include for-small-desktop-up {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 2rem;
+        }
     }
 
     &-button-prev {
-        left: calc(100% - 6rem);
+        left: calc(100% - 5rem);
     }
 }

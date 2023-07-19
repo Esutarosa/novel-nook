@@ -78,12 +78,6 @@ const sliderSwiper = new Swiper('.slider__content', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
-    breakpoints: {
-        768: {
-            centeredSlides: false,
-        }
-    }
 })
 
 /*========== DARK LIGHT THEME ==========*/
