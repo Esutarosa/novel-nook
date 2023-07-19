@@ -105,11 +105,13 @@
                 weight: var(--font-medium)
             }
             color: var(--text-color);
+            -webkit-line-clamp: 2;
         }
 
         &-text {
             margin: .25rem 0 .75rem;
             font-size: .75rem;
+            -webkit-line-clamp: 3;
         }
 
         &-data {
@@ -212,4 +214,8 @@
             color: var(--text-color);
         }
     }
+}
+
+.news-clamp {
+    -webkit-line-clamp: 1;
 }
