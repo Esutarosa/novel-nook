@@ -2,10 +2,6 @@
     width: 100%;
     max-width: 1200px;
 
-    @include for-phone-only {
-        margin-inline: 1rem;
-    }
-
     @include for-tablet-landscape-up {
         margin-inline: 0;
     }
