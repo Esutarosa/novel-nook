@@ -56,13 +56,13 @@
 
     &__image {
         display: block;
-        width: 140px;
+        width: 160px;
         height: 210px;
         margin-bottom: .75rem;
         border-radius: .5rem;
 
-        @include for-small-desktop-up {
-            width: 160px;
+        @include for-tablet-landscape-up {
+            width: 180px;
             height: 240px;
         }
     }
@@ -117,5 +117,15 @@
         &:hover {
             color: var(--first-color);
         }
+    }
+}
+
+.show__follow {
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+
+    @include for-desktop-up {
+        display: none;
     }
 }
