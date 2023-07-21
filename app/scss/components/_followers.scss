@@ -54,6 +54,14 @@
         }
     }
 
+    &__meta {
+       width: 160px;
+
+       @include for-tablet-landscape-up {
+            width: 180px;
+        }
+    }
+
     &__image {
         display: block;
         width: 160px;
@@ -105,7 +113,6 @@
 
     &__name {
         margin-bottom: .25rem;
-        -webkit-line-clamp: 2;
         color: var(--text-color);
         transition: color .2s;
 
@@ -117,15 +124,5 @@
         &:hover {
             color: var(--first-color);
         }
-    }
-}
-
-.show__follow {
-    @media screen and (max-width: 1200px) {
-        display: block;
-    }
-
-    @include for-desktop-up {
-        display: none;
     }
 }
