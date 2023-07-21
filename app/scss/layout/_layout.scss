@@ -31,6 +31,17 @@
     }
 }
 
+.button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--container-color);
+    padding: .5rem 1.5rem;
+    border-radius: 4rem;
+    color: var(--first-color);
+    transition: background .3s;
+    cursor: pointer;
+}
+
 .main {
     overflow: hidden;
 }

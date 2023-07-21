@@ -7,27 +7,86 @@
     }
 
     &__image {
+        position: relative;
         width: 100%;
-        height: 120px;
-
-        @include for-phone-only {
-            height: 90px;
-        }
-
-        @include for-tablet-portrait-up {
-            height: 200px;
-        }
-
+        height: 185px;
+        overflow: hidden;
+        
         @include for-tablet-landscape-up {
             border-radius: .5rem;
         }
+    }
 
-        @include for-small-desktop-up {
-            height: 220px;
+    &__signature {
+        position: absolute;
+        top: 0;
+        left: 5.5rem;
+
+        &-name {
+            background-color: var(--container-color);
+            color: var(--first-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            width: 8rem;
+            margin-top: -2rem;
+            margin-left: -8rem;
+            transform-origin: right bottom;
+            transform: rotate(-45deg);
+
+            font: {
+                size: var(--small-font-size);
+                weight: var(--font-semi-bold);
+            }
+
+            @include for-tablet-landscape-up {
+                font-size: var(--normal-font-size);
+            }
+        }
+    }
+
+    &__meta {
+        color: var(--container-color);
+        text-align: center;
+
+        @include for-phone-only {
+            max-width: 200px;
         }
 
-        @include for-big-desktop-up {
-            height: 260px;
+        &-name {
+            font: {
+                size: calc(var(--h1-font-size) - .5rem);
+                weight: var(--font-semi-bold);
+            }
+        }
+
+        &-text {
+            display: none;
+            font: {
+                size: var(--small-font-size);
+                weight: var(--font-medium);
+            }
+            margin: .5rem 0;
+
+            @include for-tablet-landscape-up {
+                max-width: 520px;
+                display: block;
+            }
+
+            @include for-small-desktop-up {
+                max-width: none;
+            }
+        }
+
+        &-button {
+            margin-top: .75rem;
+            color: var(--first-color);
+
+            font: {
+                size: var(--small-font-size);
+                weight: var(--font-semi-bold);
+            }
         }
     }
 }
