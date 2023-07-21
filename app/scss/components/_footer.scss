@@ -1,0 +1,24 @@
+/*========== FOOTER ==========*/
+.footer {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        height: 8rem;
+    }
+    
+    &__content {
+        margin-bottom: -1rem;
+        color: var(--text-color);
+        transform: scale(3);
+        transform-origin: center bottom;
+    }
+
+    &__image {
+        fill: currentcolor;
+        width: 1.5rem;
+        height: 1.5rem;
+        vertical-align: middle;
+    }
+}
