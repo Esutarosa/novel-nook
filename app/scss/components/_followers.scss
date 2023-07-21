@@ -41,7 +41,16 @@
         padding: 1.25rem 0 .5rem .75rem;
 
         @include for-small-desktop-up {
-            padding: 1rem 0 0 .75rem;
+            padding: 1rem 0 .75rem .75rem;
+        }
+    }
+
+    &__show {
+        color: var(--text-color);
+        transition: color .2s;
+
+        &:hover {
+            color: var(--first-color);
         }
     }
 
@@ -77,11 +86,20 @@
                     height: 32px;
                 }
             }
+
+            @include for-small-desktop-up {
+                height: 32px;
+            }
         }
 
         &-link {
             color: var(--text-color);
             font-size: var(--small-font-size);
+            transition: color .2s;
+
+            &:hover {
+                color: var(--title-color);
+            }
         }
     }
 
@@ -89,7 +107,7 @@
         margin-bottom: .25rem;
         -webkit-line-clamp: 2;
         color: var(--text-color);
-        transition: color .3s;
+        transition: color .2s;
 
         font: {
             size: var(--normal-font-size);
