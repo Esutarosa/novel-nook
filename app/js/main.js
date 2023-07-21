@@ -41,7 +41,7 @@ const showMenu = (headerToggle, navbarId) => {
 showMenu('header-toggle', 'navbar')
 
 /*========== REMOVE MENU MOBILE ON CLICK ==========*/
-/* const navLink = document.querySelectorAll('.nav__link, .dropdown__content-item')
+const navLink = document.querySelectorAll('.nav__link, .dropdown__content-item')
 
 function linkAction() {
     const navMenu    = document.getElementById('navbar')
@@ -50,7 +50,7 @@ function linkAction() {
     toggleMenu.classList.toggle('show-icon')
     navMenu.classList.remove('show-menu')
 }
-navLink.forEach(n => n.addEventListener('click', linkAction)) */
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*========== CHANGE BACKGROUND HEADER ==========*/
 const scrollHeader = () => {
