@@ -209,10 +209,6 @@
         display: flex;
         align-items: center;
         color: var(--text-color);
-
-        &:hover{
-            color: var(--first-color);
-        }
     }
 
     &__icon {
@@ -308,10 +304,6 @@
                 size: var(--small-font-size);
             }
             color: var(--text-color);
-            
-            &:hover {
-                color: var(--first-color);
-            }
 
             &:nth-child(1) {
                 margin-top: .75rem;

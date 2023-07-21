@@ -1,5 +1,7 @@
 /*========== SLIDER ==========*/
 .slider {
+    padding-block: .25rem .5rem;
+
     &__container {
         position: relative;
         border-radius: .5rem;
@@ -43,11 +45,6 @@
         margin-bottom: .25rem;
         -webkit-line-clamp: 2;
         color: var(--text-color);
-        transition: color .2s;
-
-        &:hover {
-            color: var(--first-color);
-        }
     }
 }
 

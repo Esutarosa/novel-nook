@@ -3,7 +3,6 @@
     &__container {
         border-radius: .5rem;
         background-color: var(--container-color);
-        margin-top: 1.5rem;
         padding-bottom: 1.5rem;
         transition: background .4s;
     }
@@ -49,11 +48,6 @@
 
     &__show {
         color: var(--text-color);
-        transition: color .2s;
-
-        &:hover {
-            color: var(--first-color);
-        }
     }
 
     &__meta {
@@ -105,26 +99,16 @@
         &-link {
             color: var(--text-color);
             font-size: var(--small-font-size);
-            transition: color .2s;
-
-            &:hover {
-                color: var(--title-color);
-            }
         }
     }
 
     &__name {
         margin-bottom: .25rem;
         color: var(--text-color);
-        transition: color .2s;
 
         font: {
             size: var(--normal-font-size);
             weight: var(--font-medium);
-        }
-
-        &:hover {
-            color: var(--first-color);
         }
     }
 }
