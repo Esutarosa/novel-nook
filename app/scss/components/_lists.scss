@@ -15,6 +15,7 @@
         padding-bottom: .5rem;
         border-radius: .5rem;
         background-color: var(--container-color);
+        transition: background .4s;
     }
 
     &__content {

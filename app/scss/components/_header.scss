@@ -8,7 +8,7 @@
     box-shadow: 0 1px 0 hsla(264, 69%, 10%, .1);
     background-color: var(--container-color);
     z-index: var(--z-fixed);
-    transition: .1s;
+    transition: .1s, background .4s;
 
     @include for-small-desktop-up {
         padding: 0 3rem 0 6rem;
@@ -112,7 +112,7 @@
         inset: 0;
         margin: auto;
         cursor: pointer;
-        transition: opacity .3s, transform .3s;
+        transition: opacity .3s, transform .3s, background .4s;
     }
 
     &__close {
@@ -121,6 +121,7 @@
 }
 
 .bg-header {
+    transition: background .4s;
     background-color: var(--container-color);
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
@@ -135,7 +136,8 @@
     background-color: var(--container-color);
     box-shadow: 4px 0px 8px rgba(22, 8, 43, .1);
     z-index: var(--z-fixed);
-    transition: .3s;
+    transition: .3s, background .4s;
+
 
     @include for-small-desktop-up {
         left: 0;
@@ -269,7 +271,8 @@
 .dropdown {
     &__name {
         font-weight: var(--font-medium);
-        transition: color .3s;
+        transition: color .3s ;
+
 
         @include for-small-desktop-up {
             opacity: 0;
@@ -394,7 +397,7 @@
 .change {
     &-theme {
         color: var(--text-color);
-        transition: color .4s;
+        transition: color .3s;
         margin-top: 7rem;
 
         &:hover{

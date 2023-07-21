@@ -1,0 +1,27 @@
+body.dark-theme {
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 70%);
+    --first-color-light: hsl(0, 0%, 30%);
+    --body-color: hsl(0, 0%, 12%);
+    --container-color: hsl(0, 0%, 15%);
+}
+
+.dark-theme :is(.bg-header, .nav__menu) {
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .2);
+}
+
+.dark-theme :is(.lists__events-text, .section__title, .banner__meta, .banner__signature-name, .banner__meta-button) {
+    color: var(--title-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background-color: hsl(0, 0%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 35%);
+}
