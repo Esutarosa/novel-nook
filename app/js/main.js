@@ -27,6 +27,23 @@ const toggleItem = (item) => {
     }
 }
 
+const navBar = document.querySelector('.nav')
+
+const handleMouseLeave = () => {
+    const itemsContents = document.querySelectorAll('.dropdown__content')
+    
+    itemsContents.forEach((item) => {
+        const parent = item.closest('.dropdown__item')
+
+        if (parent) {
+            parent.classList.remove('dropdown-open')
+        }
+
+        item.style.height = "0px"
+    })
+}
+navBar.addEventListener('mouseleave', handleMouseLeave)
+
 /*========== SHOW NAVBAR ==========*/
 const showMenu = (headerToggle, navbarId) => {
     const toggleBtn = document.getElementById(headerToggle),

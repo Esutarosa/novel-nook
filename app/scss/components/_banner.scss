@@ -50,8 +50,8 @@
         color: var(--container-color);
         text-align: center;
 
-        @include for-phone-only {
-            max-width: 200px;
+        @include for-phone-extra {
+            max-width: 220px;
         }
 
         &-name {

@@ -370,6 +370,17 @@
     }
 }
 
+/*========== DROPDOWN CLOSE ==========*/
+/* 
+.nav:not(:hover) {
+    .dropdown-open {
+        .dropdown__content {
+            height: 0px !important;
+        }
+    }
+}
+*/
+
 /*========== SHOWS ==========*/
 .show-menu {
     left: 0;
